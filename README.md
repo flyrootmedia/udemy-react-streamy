@@ -22,3 +22,6 @@ This project was built as part of the above Udemy course taught by Stephen Gride
         - added start command under scripts:
             - "start": "node app.js"
             - note: strayed slightly from the course here to follow the more recent project docs
+- [OBS Studio](https://obsproject.com/) desktop app for recording/streaming video to Node Media Server
+- [flv.js](https://www.npmjs.com/package/flv.js) over http-flv. HTML5 Flash Video Player for displaying videos
+    - Note, I think this was used for simplicity, but maybe not the best choice?
