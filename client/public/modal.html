@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Why use Portals?</title>
+        <style>
+            .sidebar {
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100vh;
+                width: 300px;
+                background-color: #eee;
+            }
+
+            .content {
+                margin-left: 300px;
+            }
+
+            .modal {
+                position: fixed;
+                z-index: 100;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                width: 100vw;
+                height: 100vh;
+                background: rgba(0,0,0,0.8);
+            }
+
+            .modal-body {
+                background: #fff;
+                margin: auto;
+                height: 30%;
+                width: 30%;
+                padding: 25px;
+                border-radius: 10px;
+                position: absolute;
+                left: 35%;
+                top: 35%;
+            }
+
+            .positioned {
+                position: relative;
+                z-index: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="positioned">
+            <!-- "positioned" is to demonstrate the potential issue with the stacking context caused by 
+            deeply nested components -->
+            <div class="modal">
+                <div class="modal-body">
+                    <h1>I am the modal.</h1>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            Sidebar
+        </div>
+        <div class="content">
+            <h1>I am the content.</h1>
+        </div>
+    </body>
+</html>
