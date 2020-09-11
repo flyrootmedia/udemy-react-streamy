@@ -1,6 +1,8 @@
 
 ## Modern React with Redux (2020 Update) - Streams Project
-This project was built as part of the above Udemy course taught by Stephen Grider. I left in some commented out code representing different stages of refactoring throughout the project, as well as some notes
+This project was built as part of the above Udemy course taught by Stephen Grider. I left in some commented out code representing different stages of refactoring throughout the project, as well as some notes.
+
+The course had this project built with class based componenents, but I chose to use functional components, so had to use some different techniques for implementing the various lifecycle methods described in the course.
 
 ## Concepts used:
 
